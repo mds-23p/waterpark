@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterpark Tycoon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Waterpark Tycoon</h1>
+        
+        <div class="controls">
+            <button class="control-button" id="build-pool">Build Pool ($500)</button>
+            <button class="control-button" id="build-slide">Build Slide ($1000)</button>
+            <button class="control-button" id="build-lazy-river">Build Lazy River ($2000)</button>
+            <button class="control-button" id="build-mega-slide">Build Mega Slide ($3000)</button>
+            <button class="control-button" id="build-wave-pool">Build Wave Pool ($2500)</button>
+            <button class="control-button" id="build-food">Build Food Stand ($300)</button>
+            <button class="control-button" id="build-ice-cream">Build Ice Cream Shop ($400)</button>
+            <button class="control-button" id="build-boba">Build Boba Shop ($500)</button>
+            <button class="control-button" id="build-bathroom">Build Bathroom ($300)</button>
+            <button class="control-button" id="toggle-paths">Show Visitor Paths</button>
+            <button class="control-button" id="take-loan">Take Loan ($1000)</button>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Money</span>
+                <span class="stat-value" id="money">$10000</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Visitors</span>
+                <span class="stat-value" id="visitors">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Happiness</span>
+                <span class="stat-value" id="happiness">100%</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Loans</span>
+                <span class="stat-value" id="loans">$0</span>
+            </div>
+        </div>
+
+        <div class="crowding-info">
+            <div class="crowding-header">Crowding Levels</div>
+            <div class="crowding-levels">
+                <div class="crowding-item">
+                    <span class="crowding-label">Pools:</span>
+                    <span class="crowding-value" id="pool-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Slides:</span>
+                    <span class="crowding-value" id="slide-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Lazy Rivers:</span>
+                    <span class="crowding-value" id="lazy-river-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Mega Slides:</span>
+                    <span class="crowding-value" id="mega-slide-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Wave Pools:</span>
+                    <span class="crowding-value" id="wave-pool-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Food Stands:</span>
+                    <span class="crowding-value" id="food-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Ice Cream Shops:</span>
+                    <span class="crowding-value" id="ice-cream-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Boba Shops:</span>
+                    <span class="crowding-value" id="boba-crowding">0/0</span>
+                </div>
+                <div class="crowding-item">
+                    <span class="crowding-label">Bathrooms:</span>
+                    <span class="crowding-value" id="bathroom-crowding">0/0</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-area"></div>
+        <div class="tooltip-container">
+            <div class="tooltip"></div>
+        </div>
+    </div>
+    <script src="waterpark.js"></script>
+</body>
+</html> 
