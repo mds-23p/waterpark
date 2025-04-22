@@ -32,8 +32,16 @@ const game = {
   },
   
   // Initialize the game
-  init: function() {
+  init: async function() {
     console.log("Waterpark Tycoon initialized!");
+    
+    // Log new player
+    try {
+      await logger.logNewPlayer();
+    } catch (error) {
+      console.error('Failed to log player:', error);
+    }
+    
     this.setupCanvas();
     this.setupEventListeners();
     this.startGameLoop();
